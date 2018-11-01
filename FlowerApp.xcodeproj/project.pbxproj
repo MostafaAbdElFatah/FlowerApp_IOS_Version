@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61369202218B52B600AD638D /* NABILA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 61369201218B52B600AD638D /* NABILA.TTF */; };
 		61D4869A218B50B90054F53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D48699218B50B90054F53F /* AppDelegate.swift */; };
-		61D4869C218B50B90054F53F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D4869B218B50B90054F53F /* ViewController.swift */; };
 		61D4869F218B50B90054F53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D4869D218B50B90054F53F /* Main.storyboard */; };
 		61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A0218B50BF0054F53F /* Assets.xcassets */; };
 		61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A2218B50BF0054F53F /* LaunchScreen.storyboard */; };
+		B7BECE7CF1789AD08A69F97E /* Pods_FlowerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61369201218B52B600AD638D /* NABILA.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NABILA.TTF; sourceTree = "<group>"; };
 		61D48696218B50B90054F53F /* FlowerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D48699218B50B90054F53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61D4869B218B50B90054F53F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61D4869E218B50B90054F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61D486A0218B50BF0054F53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D486A3218B50BF0054F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61D486A5218B50BF0054F53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847EA76069E4FCD32D537749 /* Pods-FlowerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.release.xcconfig"; sourceTree = "<group>"; };
+		CCCDB22ACD01711E42776E77 /* Pods-FlowerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BECE7CF1789AD08A69F97E /* Pods_FlowerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61369200218B529D00AD638D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				61369201218B52B600AD638D /* NABILA.TTF */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		61369203218B52E400AD638D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				61D48699218B50B90054F53F /* AppDelegate.swift */,
+				61D486A0218B50BF0054F53F /* Assets.xcassets */,
+				61D486A2218B50BF0054F53F /* LaunchScreen.storyboard */,
+				61D486A5218B50BF0054F53F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		61D4868D218B50B80054F53F = {
 			isa = PBXGroup;
 			children = (
 				61D48698218B50B90054F53F /* FlowerApp */,
 				61D48697218B50B90054F53F /* Products */,
+				E207824FA20377359FB10FE2 /* Pods */,
+				7E14AFDAE11F85FBECBB558F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,28 @@
 		61D48698218B50B90054F53F /* FlowerApp */ = {
 			isa = PBXGroup;
 			children = (
-				61D48699218B50B90054F53F /* AppDelegate.swift */,
-				61D4869B218B50B90054F53F /* ViewController.swift */,
 				61D4869D218B50B90054F53F /* Main.storyboard */,
-				61D486A0218B50BF0054F53F /* Assets.xcassets */,
-				61D486A2218B50BF0054F53F /* LaunchScreen.storyboard */,
-				61D486A5218B50BF0054F53F /* Info.plist */,
+				61369200218B529D00AD638D /* fonts */,
+				61369203218B52E400AD638D /* App */,
 			);
 			path = FlowerApp;
+			sourceTree = "<group>";
+		};
+		7E14AFDAE11F85FBECBB558F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E207824FA20377359FB10FE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCCDB22ACD01711E42776E77 /* Pods-FlowerApp.debug.xcconfig */,
+				847EA76069E4FCD32D537749 /* Pods-FlowerApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61D486A8218B50BF0054F53F /* Build configuration list for PBXNativeTarget "FlowerApp" */;
 			buildPhases = (
+				517D9C42DD260E0330524213 /* [CP] Check Pods Manifest.lock */,
 				61D48692218B50B90054F53F /* Sources */,
 				61D48693218B50B90054F53F /* Frameworks */,
 				61D48694218B50B90054F53F /* Resources */,
+				B6A25031D8DF1FDEE291FA5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */,
+				61369202218B52B600AD638D /* NABILA.TTF in Resources */,
 				61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */,
 				61D4869F218B50B90054F53F /* Main.storyboard in Resources */,
 			);
@@ -130,12 +173,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		517D9C42DD260E0330524213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A25031D8DF1FDEE291FA5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		61D48692218B50B90054F53F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D4869C218B50B90054F53F /* ViewController.swift in Sources */,
 				61D4869A218B50B90054F53F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +367,11 @@
 		};
 		61D486A9218B50BF0054F53F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCCDB22ACD01711E42776E77 /* Pods-FlowerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlowerApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlowerApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +385,11 @@
 		};
 		61D486AA218B50BF0054F53F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847EA76069E4FCD32D537749 /* Pods-FlowerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FlowerApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlowerApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
