@@ -8,21 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		61369202218B52B600AD638D /* NABILA.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 61369201218B52B600AD638D /* NABILA.TTF */; };
+		617F719F218BFBC6003C4FD5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F719E218BFBC6003C4FD5 /* SignUpViewController.swift */; };
+		617F71A3218BFC1B003C4FD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71A2218BFC1B003C4FD5 /* Extensions.swift */; };
+		617F71A5218BFC48003C4FD5 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71A4218BFC48003C4FD5 /* AuthServices.swift */; };
+		617F71A7218BFCEA003C4FD5 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71A6218BFCEA003C4FD5 /* DatabaseManager.swift */; };
+		617F71A9218BFE8C003C4FD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 617F71A8218BFE8A003C4FD5 /* GoogleService-Info.plist */; };
+		617F71AB218C0764003C4FD5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AA218C0764003C4FD5 /* SignInViewController.swift */; };
+		617F71AD218C0836003C4FD5 /* FlowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AC218C0836003C4FD5 /* FlowersViewController.swift */; };
+		617F71AF218C0D66003C4FD5 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AE218C0D65003C4FD5 /* SignViewController.swift */; };
 		61D4869A218B50B90054F53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D48699218B50B90054F53F /* AppDelegate.swift */; };
 		61D4869F218B50B90054F53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D4869D218B50B90054F53F /* Main.storyboard */; };
 		61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A0218B50BF0054F53F /* Assets.xcassets */; };
 		61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A2218B50BF0054F53F /* LaunchScreen.storyboard */; };
+		61D73F8E218C750E004F9152 /* FlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D73F8D218C750E004F9152 /* FlowerTableViewCell.swift */; };
+		61D73F90218C7708004F9152 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D73F8F218C7708004F9152 /* Flower.swift */; };
 		B7BECE7CF1789AD08A69F97E /* Pods_FlowerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61369201218B52B600AD638D /* NABILA.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = NABILA.TTF; sourceTree = "<group>"; };
+		617F719E218BFBC6003C4FD5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		617F71A2218BFC1B003C4FD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		617F71A4218BFC48003C4FD5 /* AuthServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		617F71A6218BFCEA003C4FD5 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		617F71A8218BFE8A003C4FD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		617F71AA218C0764003C4FD5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		617F71AC218C0836003C4FD5 /* FlowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersViewController.swift; sourceTree = "<group>"; };
+		617F71AE218C0D65003C4FD5 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		61D48696218B50B90054F53F /* FlowerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D48699218B50B90054F53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61D4869E218B50B90054F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61D486A0218B50BF0054F53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D486A3218B50BF0054F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61D486A5218B50BF0054F53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D73F8D218C750E004F9152 /* FlowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTableViewCell.swift; sourceTree = "<group>"; };
+		61D73F8F218C7708004F9152 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		847EA76069E4FCD32D537749 /* Pods-FlowerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.release.xcconfig"; sourceTree = "<group>"; };
 		CCCDB22ACD01711E42776E77 /* Pods-FlowerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,10 +79,41 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		617F719D218BFBA0003C4FD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				617F71AE218C0D65003C4FD5 /* SignViewController.swift */,
+				617F719E218BFBC6003C4FD5 /* SignUpViewController.swift */,
+				617F71AA218C0764003C4FD5 /* SignInViewController.swift */,
+				617F71AC218C0836003C4FD5 /* FlowersViewController.swift */,
+				61D73F8D218C750E004F9152 /* FlowerTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		617F71A0218BFBCE003C4FD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				617F71A4218BFC48003C4FD5 /* AuthServices.swift */,
+				617F71A6218BFCEA003C4FD5 /* DatabaseManager.swift */,
+				61D73F8F218C7708004F9152 /* Flower.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		617F71A1218BFBEA003C4FD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				617F71A2218BFC1B003C4FD5 /* Extensions.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		61D4868D218B50B80054F53F = {
 			isa = PBXGroup;
 			children = (
 				61D48698218B50B90054F53F /* FlowerApp */,
+				617F71A8218BFE8A003C4FD5 /* GoogleService-Info.plist */,
 				61D48697218B50B90054F53F /* Products */,
 				E207824FA20377359FB10FE2 /* Pods */,
 				7E14AFDAE11F85FBECBB558F /* Frameworks */,
@@ -81,8 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				61D4869D218B50B90054F53F /* Main.storyboard */,
-				61369200218B529D00AD638D /* fonts */,
+				617F71A0218BFBCE003C4FD5 /* Models */,
+				617F719D218BFBA0003C4FD5 /* Views */,
 				61369203218B52E400AD638D /* App */,
+				61369200218B529D00AD638D /* fonts */,
+				617F71A1218BFBEA003C4FD5 /* Supporting Files */,
 			);
 			path = FlowerApp;
 			sourceTree = "<group>";
@@ -166,6 +220,7 @@
 			files = (
 				61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */,
 				61369202218B52B600AD638D /* NABILA.TTF in Resources */,
+				617F71A9218BFE8C003C4FD5 /* GoogleService-Info.plist in Resources */,
 				61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */,
 				61D4869F218B50B90054F53F /* Main.storyboard in Resources */,
 			);
@@ -225,6 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617F71AD218C0836003C4FD5 /* FlowersViewController.swift in Sources */,
+				617F71A7218BFCEA003C4FD5 /* DatabaseManager.swift in Sources */,
+				61D73F90218C7708004F9152 /* Flower.swift in Sources */,
+				617F71A5218BFC48003C4FD5 /* AuthServices.swift in Sources */,
+				617F71AF218C0D66003C4FD5 /* SignViewController.swift in Sources */,
+				61D73F8E218C750E004F9152 /* FlowerTableViewCell.swift in Sources */,
+				617F71AB218C0764003C4FD5 /* SignInViewController.swift in Sources */,
+				617F719F218BFBC6003C4FD5 /* SignUpViewController.swift in Sources */,
+				617F71A3218BFC1B003C4FD5 /* Extensions.swift in Sources */,
 				61D4869A218B50B90054F53F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

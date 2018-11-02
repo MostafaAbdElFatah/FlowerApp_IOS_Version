@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zeR-te-EKd">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,32 +16,32 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Sign View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlowerApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignViewController" customModule="FlowerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerbg1" translatesAutoresizingMaskIntoConstraints="NO" id="EfB-JL-Xli">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerlog3" translatesAutoresizingMaskIntoConstraints="NO" id="oTs-Yh-0Ny">
-                                <rect key="frame" x="100" y="74" width="175" height="175"/>
+                                <rect key="frame" x="100" y="74" width="214" height="214"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oTs-Yh-0Ny" secondAttribute="height" multiplier="1:1" id="fct-4K-05t"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmJ-sk-aDZ">
-                                <rect key="frame" x="16" y="289" width="343" height="131.5"/>
+                                <rect key="frame" x="16" y="328" width="382" height="105.33333333333331"/>
                                 <string key="text">the best and freshest flowers The Flower Boutique has exactly what you’re looking for! Check out our wide selection of flower arrangements to make your next occasion memorable.</string>
                                 <fontDescription key="fontDescription" name="iCielNabila" family="iCiel Nabila" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYN-z2-Mgf">
-                                <rect key="frame" x="32" y="574" width="311" height="43"/>
+                                <rect key="frame" x="32" y="643" width="350" height="43"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="iCielNabila" family="iCiel Nabila" pointSize="20"/>
                                 <state key="normal" title="Sign in">
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIW-O4-2cf">
-                                <rect key="frame" x="32" y="516" width="311" height="43"/>
+                                <rect key="frame" x="32" y="585" width="350" height="43"/>
                                 <color key="backgroundColor" red="0.091858316731175199" green="0.32928645202351103" blue="0.28271773707832615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="iCielNabila" family="iCiel Nabila" pointSize="20"/>
                                 <state key="normal" title="Sign Up">
@@ -102,34 +102,34 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="e5D-i6-jDY">
             <objects>
-                <viewController id="hip-Gv-GXx" sceneMemberID="viewController">
+                <viewController id="hip-Gv-GXx" customClass="SignInViewController" customModule="FlowerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y8O-7G-pYq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerbg1" translatesAutoresizingMaskIntoConstraints="NO" id="WTe-7j-NGK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerlog3" translatesAutoresizingMaskIntoConstraints="NO" id="Wbw-2J-SBh">
-                                <rect key="frame" x="100" y="79" width="175" height="175"/>
+                                <rect key="frame" x="100" y="79" width="214" height="214"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2J-uR-ccX">
-                                <rect key="frame" x="16" y="304" width="343" height="30"/>
+                                <rect key="frame" x="16" y="343" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-dG-Qps">
-                                <rect key="frame" x="16" y="364" width="343" height="30"/>
+                                <rect key="frame" x="16" y="403" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-WD-iiD">
-                                <rect key="frame" x="239" y="604" width="120" height="43"/>
+                                <rect key="frame" x="278" y="673" width="120" height="43"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="olC-qY-gfl"/>
@@ -144,6 +144,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInbtn_DidTapped:" destination="hip-Gv-GXx" eventType="touchUpInside" id="iGQ-Xv-DQq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,51 +171,55 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aAr-68-Dme"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="o2J-uR-ccX" id="Jgs-6x-Vdc"/>
+                        <outlet property="passwordTextField" destination="UzJ-dG-Qps" id="QC8-WB-ahn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bC9-Cv-Hj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="501"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Pf5-eq-fUc">
             <objects>
-                <viewController id="1gC-U3-B7a" sceneMemberID="viewController">
+                <viewController id="1gC-U3-B7a" customClass="SignUpViewController" customModule="FlowerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xCj-1A-YJJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerbg1" translatesAutoresizingMaskIntoConstraints="NO" id="pva-Kp-HYA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerlog3" translatesAutoresizingMaskIntoConstraints="NO" id="wUp-5a-TFi">
-                                <rect key="frame" x="100" y="79" width="175" height="175"/>
+                                <rect key="frame" x="100" y="79" width="214" height="214"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFZ-ze-yRw">
-                                <rect key="frame" x="16" y="274" width="343" height="30"/>
+                                <rect key="frame" x="16" y="313" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-Ql-rLH">
-                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <rect key="frame" x="16" y="358" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9LK-Gw-7z3">
-                                <rect key="frame" x="16" y="364" width="343" height="30"/>
+                                <rect key="frame" x="16" y="403" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mb4-9R-6Rm">
-                                <rect key="frame" x="16" y="410" width="343" height="30"/>
+                                <rect key="frame" x="16" y="449" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-eK-w5C">
-                                <rect key="frame" x="239" y="604" width="120" height="43"/>
+                                <rect key="frame" x="278" y="673" width="120" height="43"/>
                                 <color key="backgroundColor" red="0.09185831673" green="0.32928645200000001" blue="0.28271773709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="EDw-8J-Wtc"/>
@@ -228,7 +235,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="6ez-vp-YbG" kind="show" id="DdU-yC-p10"/>
+                                    <action selector="signUpbtn_DidTaped:" destination="1gC-U3-B7a" eventType="touchUpInside" id="hid-uA-EF9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -260,57 +267,67 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3er-7E-ho9"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="iFZ-ze-yRw" id="v5B-MS-NaY"/>
+                        <outlet property="passwordTextField" destination="Mb4-9R-6Rm" id="oUo-xg-aUU"/>
+                        <outlet property="phoneTextField" destination="9LK-Gw-7z3" id="4OX-q0-fzX"/>
+                        <outlet property="userNameTextField" destination="ZfM-Ql-rLH" id="sGz-nb-7dY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEe-sd-Iy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869.5999999999999" y="-181.25937031484258"/>
         </scene>
-        <!--View Controller-->
+        <!--Flowers View Controller-->
         <scene sceneID="syV-yP-9Bn">
             <objects>
-                <viewController id="6ez-vp-YbG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flowerslist" id="6ez-vp-YbG" customClass="FlowersViewController" customModule="FlowerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nd3-8y-iUZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7F3-Pa-AyA">
+                                <rect key="frame" x="197" y="358" width="20" height="20"/>
+                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerbg1" translatesAutoresizingMaskIntoConstraints="NO" id="Edp-ve-cgo">
-                                <rect key="frame" x="0.0" y="32" width="375" height="635"/>
+                                <rect key="frame" x="0.0" y="-12" width="414" height="748"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="trk-5h-7hl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="128" id="Yua-6o-BLo">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="128" id="Yua-6o-BLo" customClass="FlowerTableViewCell" customModule="FlowerApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yua-6o-BLo" id="4vL-2b-Kcn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zt-qB-0Tv">
-                                                    <rect key="frame" x="5" y="5" width="365" height="118"/>
+                                                    <rect key="frame" x="5" y="5" width="404" height="118"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-56-4VG">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="8gp-56-4VG">
                                                             <rect key="frame" x="5" y="5" width="108" height="108"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="8gp-56-4VG" secondAttribute="height" multiplier="1:1" id="ZYQ-PY-cPG"/>
+                                                                <constraint firstAttribute="width" constant="108" id="SeJ-V5-mNx"/>
+                                                                <constraint firstAttribute="height" constant="108" id="pvL-eM-fUh"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="flower name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kC-Vw-EY7">
-                                                            <rect key="frame" x="121" y="8" width="236" height="30"/>
+                                                            <rect key="frame" x="121" y="8" width="275" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="flower catogray" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXS-cr-tFS">
-                                                            <rect key="frame" x="121" y="46" width="236" height="20.5"/>
+                                                            <rect key="frame" x="121" y="46" width="275" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-g9-6z5">
-                                                            <rect key="frame" x="121" y="74.5" width="236" height="20.5"/>
+                                                            <rect key="frame" x="121" y="74.333333333333329" width="275" height="20.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -344,14 +361,24 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="flowerCategoryLabel" destination="VXS-cr-tFS" id="e6t-UG-E76"/>
+                                            <outlet property="flowerImageView" destination="8gp-56-4VG" id="iNE-Qe-lzL"/>
+                                            <outlet property="flowerNameLabel" destination="7kC-Vw-EY7" id="wGv-jz-JNO"/>
+                                            <outlet property="flowerPriceLabel" destination="Nmf-g9-6z5" id="dnx-YE-QAL"/>
                                             <segue destination="GZa-oB-Llz" kind="show" id="Wyx-CJ-R05"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6ez-vp-YbG" id="dZa-Ow-DkH"/>
+                                    <outlet property="delegate" destination="6ez-vp-YbG" id="avH-ii-NLX"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7F3-Pa-AyA" firstAttribute="centerY" secondItem="Nd3-8y-iUZ" secondAttribute="centerY" id="4O9-0I-fNe"/>
+                            <constraint firstItem="7F3-Pa-AyA" firstAttribute="centerX" secondItem="Nd3-8y-iUZ" secondAttribute="centerX" id="6I7-7a-WP8"/>
                             <constraint firstItem="pfx-zO-07Q" firstAttribute="trailing" secondItem="trk-5h-7hl" secondAttribute="trailing" id="79r-wo-SZV"/>
                             <constraint firstItem="pfx-zO-07Q" firstAttribute="trailing" secondItem="Edp-ve-cgo" secondAttribute="trailing" id="7Jb-NI-wkG"/>
                             <constraint firstItem="Edp-ve-cgo" firstAttribute="top" secondItem="pfx-zO-07Q" secondAttribute="top" constant="-32" id="C6z-zn-oAI"/>
@@ -363,6 +390,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pfx-zO-07Q"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7F3-Pa-AyA" id="tuV-Wf-bAa"/>
+                        <outlet property="tableView" destination="trk-5h-7hl" id="ErH-zc-Ctz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awV-es-BFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,7 +404,7 @@
             <objects>
                 <viewController id="GZa-oB-Llz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cx7-D4-kKJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="8lT-fQ-vEm"/>
@@ -389,7 +420,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeR-te-EKd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hPt-UL-17a">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.087941519916057587" green="0.32902097702026367" blue="0.28244096040725708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -406,5 +437,6 @@
     <resources>
         <image name="flowerbg1" width="240" height="320"/>
         <image name="flowerlog3" width="340" height="397"/>
+        <image name="loading" width="512" height="512"/>
     </resources>
 </document>
