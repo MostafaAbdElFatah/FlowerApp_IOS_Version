@@ -12,21 +12,42 @@ class OrdersTableViewController: UITableViewController {
 
     var userInfo:UserInfo!
     var ordersList:[Order] = []
+    var activityIndecator: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         DatabaseManager.getUserInfo { (userInfo) in
             if let userInfo = userInfo {
                 self.userInfo = userInfo
                 DatabaseManager.getOrdersList { (orders) in
                     self.ordersList += orders.filter{ $0.status }
                     self.tableView.reloadData()
+                    self.activityIndecator.stopAnimating()
                 }
             }
         }
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addActivityIndecator()
+    }
+    
+    func addActivityIndecator(){
+        activityIndecator = UIActivityIndicatorView.init(frame: self.tableView.bounds)
+        self.tableView.addSubview(activityIndecator)
+        activityIndecator.startAnimating()
+        activityIndecator.hidesWhenStopped = true
+        activityIndecator.activityIndicatorViewStyle = .gray
+        self.tableView.bringSubview(toFront: activityIndecator)
+
+    }
+    
+    
+    
+    
     @IBAction func goBackToHome(_ sender: Any) {
         let main = UIStoryboard(name: "Main", bundle: nil)
         let vc = main.instantiateViewController(withIdentifier: "main_vc")
