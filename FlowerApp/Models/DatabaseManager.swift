@@ -7,15 +7,25 @@ struct DatabaseManager {
     private static let root = Database.database().reference()
     private static let users = root.child("users")
     private static let flowers = root.child("flowers")
-
-    //private static let orders = users.child(AuthServices.getUserId()!).child("orders");
+    private static let orders = users.child(AuthManager.getUserId()!).child("orders")
     
     // MARK:- Save user info to firebase database
     static func saveUserInfo(userName:String, phone:String){
-        let user = users.child(AuthServices.getUserId()!)
+        let user = users.child(AuthManager.getUserId()!)
         user.child("name").setValue(userName)
         user.child("phone").setValue(phone)
         user.child("address").setValue("No ADDRESS")
+    }
+    // MARK:- save order in database
+    static func saveOrder(order:Order){
+        let dbOrder = orders.childByAutoId()
+        dbOrder.setValue([ KeysNames.id:dbOrder.key!,
+                           KeysNames.name:order.flowerName,
+                           KeysNames.payment:order.payment,
+                           KeysNames.discount:order.discount,
+                           KeysNames.price:order.totalPrice,
+                           KeysNames.quantity:order.quantity,
+                           KeysNames.status:order.status])
     }
     
     // MARK:- get flowers list
@@ -36,5 +46,6 @@ struct DatabaseManager {
             }
         }
     }
+    
     
 }

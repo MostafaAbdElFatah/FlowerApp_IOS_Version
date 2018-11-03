@@ -13,12 +13,12 @@ class SignViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        AuthServices.authChanged { (auth, user) in
+        AuthManager.authChanged { (auth, user) in
             /// present flowers view contoller
             if user != nil{
                 let main = UIStoryboard(name: "Main", bundle: nil)
-                let flowersVc = main.instantiateViewController(withIdentifier: "flowerslist")
-                self.navigationController?.pushViewController(flowersVc, animated: true)
+                let vc = main.instantiateViewController(withIdentifier: "main_vc")
+                self.present(vc, animated: true, completion: nil)
             }
         }
     }

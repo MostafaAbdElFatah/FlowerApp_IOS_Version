@@ -1,7 +1,7 @@
 import Foundation
 import FirebaseAuth
 
-struct AuthServices {
+struct AuthManager {
     
     // MARK: - create account in firebase
     static func signUp(email:String, userName:String,phone:String, password:String, completion:@escaping (String)->()){

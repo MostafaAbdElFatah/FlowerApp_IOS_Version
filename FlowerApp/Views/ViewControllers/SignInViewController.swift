@@ -1,34 +1,31 @@
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignInViewController: UIViewController {
 
+    
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewWillAppear(_ animated: Bool) {
-        AuthServices.authChanged { (auth, user) in
+        AuthManager.authChanged { (auth, user) in
             /// present flowers view contoller
             if user != nil{
                 let main = UIStoryboard(name: "Main", bundle: nil)
-                let flowersVc = main.instantiateViewController(withIdentifier: "flowerslist")
-                self.navigationController?.pushViewController(flowersVc, animated: true)
+                let vc = main.instantiateViewController(withIdentifier: "main_vc")
+                self.present(vc, animated: true, completion: nil)
             }
         }
     }
     
-    @IBAction func signUpbtn_DidTaped(_ sender: UIButton) {
+    @IBAction func signInbtn_DidTapped(_ sender: UIButton) {
         guard let email = emailTextField.text,
-            let name = userNameTextField.text,
-            let phone = phoneTextField.text,
             let password = passwordTextField.text
             else {
-            self.showAlert(title: "Sign Up Error", message: "please fill all fields")
-            return
+                self.showAlert(title: "Sign in Error", message: "please fill all fields")
+                return
         }
-        AuthServices.signUp(email: email, userName: name, phone: phone, password: password) { (errorMessage) in
-            self.showAlert(title: "Sign Up Error", message: errorMessage)
+        AuthManager.signIn(email: email, password: password) { (errorMessage) in
+            self.showAlert(title: "Sign in Error", message: errorMessage)
         }
     }
     
