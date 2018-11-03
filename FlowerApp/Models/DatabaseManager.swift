@@ -16,30 +16,59 @@ struct DatabaseManager {
         user.child("phone").setValue(phone)
         user.child("address").setValue("No ADDRESS")
     }
+    
+    static func saveDeviceToken() {
+        users.child(AuthManager.getUserId()!).child("device_token").setValue("")
+    }
+    
+    // set address in firebase database
+    static func saveAddress(address:String){
+        users.child(AuthManager.getUserId()!).child("address").setValue(address)
+    }
+    
     // MARK:- save order in database
     static func saveOrder(order:Order){
         let dbOrder = orders.childByAutoId()
-        dbOrder.setValue([ KeysNames.id:dbOrder.key!,
-                           KeysNames.name:order.flowerName,
-                           KeysNames.payment:order.payment,
-                           KeysNames.discount:order.discount,
-                           KeysNames.price:order.totalPrice,
-                           KeysNames.quantity:order.quantity,
-                           KeysNames.status:order.status])
+        dbOrder.setValue([ OrderKeysNames.id:dbOrder.key!,
+                           OrderKeysNames.name:order.flowerName,
+                           OrderKeysNames.payment:order.payment,
+                           OrderKeysNames.discount:order.discount,
+                           OrderKeysNames.price:order.totalPrice,
+                           OrderKeysNames.quantity:order.quantity,
+                           OrderKeysNames.status:order.status])
     }
     
+    //remove order from firbase
+    static func removeOrder(order:Order) {
+        orders.child(order.id).removeValue();
+    }
+    
+    // MARK:- get User info
+    static func getUserInfo(completion:@escaping (_ flowersList:UserInfo?)->()){
+        users.child(AuthManager.getUserId()!).observeSingleEvent(of: .value) { (snapshot) in
+            if let data = snapshot.value as? [String:AnyObject] {
+                let name = data[UserKeysNames.name] as! String
+                let address = data[UserKeysNames.address] as! String
+                let phone = data[UserKeysNames.phone] as! String
+                let device_token = data[UserKeysNames.device_token] as! String
+                completion(UserInfo(name: name, address: address, phone: phone, device_token: device_token))
+            }else {
+                completion(nil)
+            }
+        }
+    }
     // MARK:- get flowers list
     static func getFlowersList(completion:@escaping (_ flowersList:[Flower])->()){
         flowers.observeSingleEvent(of: .value) { (snapshot) in
             var flowers:[Flower] = []
             if let data = snapshot.value as? [String:AnyObject] {
                 for value in data.values {
-                    let id = value["productId"] as! Int
-                    let name = value["name"] as! String
-                    let category = value["category"] as! String
-                    let price = (value["price"] as! NSNumber).floatValue
-                    let photo = value["photo"] as! String
-                    let instructions = value["instructions"] as! String
+                    let id = value[FlowerKeysNames.id] as! Int
+                    let name = value[FlowerKeysNames.name] as! String
+                    let category = value[FlowerKeysNames.category] as! String
+                    let price = (value[FlowerKeysNames.price] as! NSNumber).floatValue
+                    let photo = value[FlowerKeysNames.photo] as! String
+                    let instructions = value[FlowerKeysNames.instructions] as! String
                     flowers.append(Flower(productId: id, name: name, photo: photo, category: category, price: price, instructions: instructions))
                 }
                 completion(flowers)
@@ -47,5 +76,48 @@ struct DatabaseManager {
         }
     }
     
+    // MARK:- get orders list
+    static func getOrdersList(completion:@escaping (_ ordersList:[Order])->()){
+        
+         orders.observeSingleEvent(of: .value) { (snapshot) in
+             var orders:[Order] = []
+             if let data = snapshot.value as? [String:AnyObject] {
+                 for value in data.values {
+                         let id = value[OrderKeysNames.id] as! String
+                         let name = value[OrderKeysNames.name] as! String
+                         let payment = value[OrderKeysNames.payment] as! String
+                         let status = value[OrderKeysNames.status] as! Bool
+                         let price = (value[OrderKeysNames.price] as! NSNumber).floatValue
+                         let quantity = (value[OrderKeysNames.quantity] as! NSNumber).intValue
+                         let discount = (value[OrderKeysNames.discount] as! NSNumber).intValue
+                         orders.append(Order(id: id, flowerName: name, payment: payment, quantity: quantity, status: status, totalPrice: price, discount: discount))
+                }
+                completion(orders)
+            }
+         }
+       ////
+    }
+    
     
 }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 

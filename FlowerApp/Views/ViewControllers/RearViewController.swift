@@ -57,19 +57,17 @@ class RearViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     private func showCart(){
-        /*
+        
         let main = UIStoryboard(name: "Main", bundle: nil)
-        let vc = main.instantiateViewController(withIdentifier: "main_vc")
+        let vc = main.instantiateViewController(withIdentifier: "cart")
         self.present(vc, animated: true, completion: nil)
-         */
+        
     }
     
     private func showOrderStatus(){
-        /*
-         let main = UIStoryboard(name: "Main", bundle: nil)
-         let vc = main.instantiateViewController(withIdentifier: "main_vc")
-         self.present(vc, animated: true, completion: nil)
-         */
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let vc = main.instantiateViewController(withIdentifier: "orders")
+        self.present(vc, animated: true, completion: nil)
     }
     
     private func signOut(){

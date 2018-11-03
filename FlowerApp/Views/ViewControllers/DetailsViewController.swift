@@ -72,12 +72,11 @@ class DetailsViewController: UIViewController {
     @IBAction func orderbtnDidTapped(_ sender: Any) {
         if payment != "" {
             /// save order in database
-            let order = Order()
-            order.flowerName = flower.name
-            order.payment = payment
-            order.quantity = Int(flowerQuentity.text!)!
-            order.totalPrice = (flower.price * Float(order.quantity)).rounded(toPlaces: 2)
+            let quantity = Int(flowerQuentity.text!)!
+            let totalPrice = flower.price * Float(quantity)
+            let order = Order(id: "", flowerName: flower.name, payment: payment, quantity: quantity, status: false, totalPrice: totalPrice, discount: 0)
             DatabaseManager.saveOrder(order: order)
+            self.showAlert(title: "Order Request", message: "Order added Successfully to Cart")
         }else{
             self.showAlert(title: "payment", message: "please payment method")
         }
