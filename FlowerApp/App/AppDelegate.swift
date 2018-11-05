@@ -18,10 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // firebase configuration
         FirebaseApp.configure()
         // change some propreties of navigation controller
+        /*
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes*/
+        
         let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         navigationBarAppearace.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navigationBarAppearace.barTintColor = #colorLiteral(red: 0.08794151992, green: 0.329020977, blue: 0.2824409604, alpha: 1)
         UIApplication.shared.statusBarStyle = .lightContent
+    
         return true
     }
 

@@ -11,7 +11,6 @@
 		61723197218CA9A400C73D36 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61723196218CA9A400C73D36 /* StorageManager.swift */; };
 		61723199218CC16F00C73D36 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61723198218CC16F00C73D36 /* DetailsViewController.swift */; };
 		6172319B218CD67500C73D36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6172319A218CD67500C73D36 /* CardView.swift */; };
-		6172319F218CDDF500C73D36 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6172319E218CDDF500C73D36 /* SWRevealViewController.m */; };
 		617231A1218CE77800C73D36 /* RearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617231A0218CE77800C73D36 /* RearTableViewCell.swift */; };
 		617231A3218CE80F00C73D36 /* RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617231A2218CE80E00C73D36 /* RearViewController.swift */; };
 		617231A5218CE9B000C73D36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617231A4218CE9B000C73D36 /* Constants.swift */; };
@@ -23,6 +22,7 @@
 		617F71AB218C0764003C4FD5 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AA218C0764003C4FD5 /* SignInViewController.swift */; };
 		617F71AD218C0836003C4FD5 /* FlowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AC218C0836003C4FD5 /* FlowersViewController.swift */; };
 		617F71AF218C0D66003C4FD5 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F71AE218C0D65003C4FD5 /* SignViewController.swift */; };
+		61A12E2F218E744E0035AFC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A12E2E218E744E0035AFC0 /* SWRevealViewController.m */; };
 		61B37C64218DAD3A00777705 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B37C63218DAD3A00777705 /* OrdersTableViewController.swift */; };
 		61B37C66218DADF100777705 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B37C65218DADF100777705 /* CartViewController.swift */; };
 		61B37C6A218DB62000777705 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B37C69218DB62000777705 /* CartTableViewCell.swift */; };
@@ -32,6 +32,7 @@
 		61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A0218B50BF0054F53F /* Assets.xcassets */; };
 		61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D486A2218B50BF0054F53F /* LaunchScreen.storyboard */; };
 		61D73F8E218C750E004F9152 /* FlowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D73F8D218C750E004F9152 /* FlowerTableViewCell.swift */; };
+		61DE141E218FD8F900B87CB2 /* Sign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DE141D218FD8F900B87CB2 /* Sign.storyboard */; };
 		B7BECE7CF1789AD08A69F97E /* Pods_FlowerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +41,6 @@
 		61723196218CA9A400C73D36 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		61723198218CC16F00C73D36 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6172319A218CD67500C73D36 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		6172319C218CDDF100C73D36 /* FlowerApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowerApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		6172319D218CDDF400C73D36 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		6172319E218CDDF500C73D36 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		617231A0218CE77800C73D36 /* RearTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearTableViewCell.swift; sourceTree = "<group>"; };
 		617231A2218CE80E00C73D36 /* RearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearViewController.swift; sourceTree = "<group>"; };
 		617231A4218CE9B000C73D36 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -54,6 +52,9 @@
 		617F71AA218C0764003C4FD5 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		617F71AC218C0836003C4FD5 /* FlowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersViewController.swift; sourceTree = "<group>"; };
 		617F71AE218C0D65003C4FD5 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		61A12E2C218E74480035AFC0 /* FlowerApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowerApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		61A12E2D218E744C0035AFC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		61A12E2E218E744E0035AFC0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		61B37C63218DAD3A00777705 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		61B37C65218DADF100777705 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		61B37C69218DB62000777705 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		61D486A3218B50BF0054F53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61D486A5218B50BF0054F53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61D73F8D218C750E004F9152 /* FlowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerTableViewCell.swift; sourceTree = "<group>"; };
+		61DE141D218FD8F900B87CB2 /* Sign.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sign.storyboard; sourceTree = "<group>"; };
 		847EA76069E4FCD32D537749 /* Pods-FlowerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.release.xcconfig"; sourceTree = "<group>"; };
 		CCCDB22ACD01711E42776E77 /* Pods-FlowerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowerApp/Pods-FlowerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F71C39875AB2CE1402564B2E /* Pods_FlowerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,9 +127,9 @@
 			children = (
 				617231A4218CE9B000C73D36 /* Constants.swift */,
 				617F71A2218BFC1B003C4FD5 /* Extensions.swift */,
-				6172319D218CDDF400C73D36 /* SWRevealViewController.h */,
-				6172319E218CDDF500C73D36 /* SWRevealViewController.m */,
-				6172319C218CDDF100C73D36 /* FlowerApp-Bridging-Header.h */,
+				61A12E2D218E744C0035AFC0 /* SWRevealViewController.h */,
+				61A12E2E218E744E0035AFC0 /* SWRevealViewController.m */,
+				61A12E2C218E74480035AFC0 /* FlowerApp-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +183,7 @@
 		61D48698218B50B90054F53F /* FlowerApp */ = {
 			isa = PBXGroup;
 			children = (
-				61D4869D218B50B90054F53F /* Main.storyboard */,
+				61DE141C218FD8CD00B87CB2 /* Storyboard */,
 				617F71A0218BFBCE003C4FD5 /* Models */,
 				617F719D218BFBA0003C4FD5 /* Views */,
 				61369203218B52E400AD638D /* App */,
@@ -189,6 +191,15 @@
 				617F71A1218BFBEA003C4FD5 /* Supporting Files */,
 			);
 			path = FlowerApp;
+			sourceTree = "<group>";
+		};
+		61DE141C218FD8CD00B87CB2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				61DE141D218FD8F900B87CB2 /* Sign.storyboard */,
+				61D4869D218B50B90054F53F /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		7E14AFDAE11F85FBECBB558F /* Frameworks */ = {
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D486A4218B50BF0054F53F /* LaunchScreen.storyboard in Resources */,
+				61DE141E218FD8F900B87CB2 /* Sign.storyboard in Resources */,
 				61369202218B52B600AD638D /* NABILA.TTF in Resources */,
 				617F71A9218BFE8C003C4FD5 /* GoogleService-Info.plist in Resources */,
 				61D486A1218B50BF0054F53F /* Assets.xcassets in Resources */,
@@ -340,10 +352,10 @@
 				617231A1218CE77800C73D36 /* RearTableViewCell.swift in Sources */,
 				617F71A5218BFC48003C4FD5 /* AuthManager.swift in Sources */,
 				61B37C6C218DB63E00777705 /* OrderTableViewCell.swift in Sources */,
+				61A12E2F218E744E0035AFC0 /* SWRevealViewController.m in Sources */,
 				61B37C64218DAD3A00777705 /* OrdersTableViewController.swift in Sources */,
 				617F71AF218C0D66003C4FD5 /* SignViewController.swift in Sources */,
 				61D73F8E218C750E004F9152 /* FlowerTableViewCell.swift in Sources */,
-				6172319F218CDDF500C73D36 /* SWRevealViewController.m in Sources */,
 				6172319B218CD67500C73D36 /* CardView.swift in Sources */,
 				617F71AB218C0764003C4FD5 /* SignInViewController.swift in Sources */,
 				617F719F218BFBC6003C4FD5 /* SignUpViewController.swift in Sources */,

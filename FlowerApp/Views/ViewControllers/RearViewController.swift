@@ -2,7 +2,14 @@ import UIKit
 
 class RearViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var userName: UILabel!
+    
     override func viewDidLoad() {
+        DatabaseManager.getUserInfo { (userInfo) in
+            if let userInfo = userInfo{
+                self.userName.text = userInfo.name
+            }
+        }
         let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipedMenu(_:)))
         swipe.direction = .left
         self.view.addGestureRecognizer(swipe)
@@ -51,7 +58,7 @@ class RearViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     private func showHome(){
-        let main = UIStoryboard(name: "Main", bundle: nil)
+        let main = UIStoryboard(name: "Sign", bundle: nil)
         let vc = main.instantiateViewController(withIdentifier: "signVc")
         self.present(vc, animated: true, completion: nil)
     }
@@ -72,7 +79,7 @@ class RearViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     private func signOut(){
         AuthManager.signOut()
-        let main = UIStoryboard(name: "Main", bundle: nil)
+        let main = UIStoryboard(name: "Sign", bundle: nil)
         let vc = main.instantiateViewController(withIdentifier: "signInVc")
         self.present(vc, animated: true, completion: nil)
     }

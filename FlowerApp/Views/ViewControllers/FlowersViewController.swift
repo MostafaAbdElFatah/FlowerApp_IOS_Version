@@ -1,7 +1,6 @@
 import UIKit
 import SDWebImage
 
-
 class FlowersViewController: UIViewController {
 
     var indexPath:IndexPath!
@@ -12,6 +11,7 @@ class FlowersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadData()
+        
         let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swipedMenu(_:)))
         swipe.direction = .right
         self.view.addGestureRecognizer(swipe)

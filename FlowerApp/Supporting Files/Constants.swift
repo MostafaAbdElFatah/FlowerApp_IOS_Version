@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 struct Constants {
     static let items = [item(image:#imageLiteral(resourceName: "home-48"), title:"Home"), item(image:#imageLiteral(resourceName: "shopping-cart-24"), title:"Cart"), item(image:#imageLiteral(resourceName: "add-shopping-cart-24"), title:"Orders Status"), item(image:#imageLiteral(resourceName: "exit-26"), title:"Sign out")]

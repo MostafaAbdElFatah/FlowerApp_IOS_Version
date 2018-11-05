@@ -33,7 +33,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // set flower details
-        self.navigationController?.title = flower.name
+        self.navigationItem.title = flower.name
         self.flowerCategory.text = self.flower.category
         self.flowerPrice.text = "$\(self.flower.price)"
         self.flowerinstructions.text = self.flower.instructions
